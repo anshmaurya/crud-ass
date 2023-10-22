@@ -1,3 +1,4 @@
+// here we writing some validation for login 
 exports.loginvalidation=(req,res,next)=>{
     const {email,password} = req.body;
 

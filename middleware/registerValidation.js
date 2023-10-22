@@ -1,3 +1,4 @@
+// here we writing some validation regarding registration page
 exports.registerValidation = (req,res,next) => {
     const {name,email,password} = req.body;
 

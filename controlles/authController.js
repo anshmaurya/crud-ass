@@ -1,9 +1,13 @@
 const { UserModel } = require('../models/userModel');
 
+
+// Controller for Home page
 const home = (req,res) => {
     res.status(200).send({msg:"This is Home page!"});
 };
 
+
+// controller for registration actions
 const register = async (req,res)=> {
     const {name,email,password} = req.body;
     try {
@@ -15,6 +19,7 @@ const register = async (req,res)=> {
     }
 
 }
+// controller for login actions
 const login = async(req,res)=>{
     const {email,password} = req.body;
 
